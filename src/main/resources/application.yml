@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: usuarios-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tasks
+    username: postgres
+    password: Andrewseigokan9
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
